@@ -19,3 +19,43 @@ body{
 	background-position: center center;
 	background-attachment: fixed;
 }
+
+.title{
+	position: absolute;
+	left: 30%;
+	top:25px;
+}
+
+.ml{
+position:absolute;
+display:block;
+font-family:"tahoma","Times New Roman";
+font-size:25px;
+top:100px;
+right:100px;
+}
+a:link {text-decoration:none;color:black;}
+a:visited {text-decoration:none;color:black;}
+a:hover {text-decoration:underline;color:black;}
+a:active {text-decoration:underline;color:black;}
+
+.search_tool{
+	position: absolute;
+	top:200px;
+	font-family:"tahoma","Times New Roman";
+	font-size: 23px;
+	color: #052a1e;
+	left:100px; 
+}
+
+.search_tool div {
+	border:1px solid black;
+	padding: 34px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius: 5px;
+	-o-border-radius:5px; 
+	float: left;
+	margin: 40px;
+	background:rgba(255,255,255,0.4);
+}
