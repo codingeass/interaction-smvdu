@@ -20,6 +20,13 @@ body{
 	background-attachment: fixed;
 }
 
+.first .logo img{
+	position: absolute;
+	left: 1.5%;
+	top: 2%;
+	width:10%;
+}
+
 .title{
 	position: absolute;
 	left: 30%;
