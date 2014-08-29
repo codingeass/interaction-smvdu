@@ -1,0 +1,21 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+header,nav,ul,aside,section,footer,hgroup,article{
+display: block;
+}
+body{
+	width:100%;
+}
+.first{
+	max-width:100%;	
+	display:-webkit-box;
+	height:667px;	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.1))), url("../img/ByTarun.png") repeat 0 0;
+	background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.1))), url("../img/ByTarun.png") repeat 0 0;
+	background: -o-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0.1))), url("../img/ByTarun.png") repeat 0 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
