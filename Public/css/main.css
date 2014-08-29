@@ -59,3 +59,34 @@ a:active {text-decoration:underline;color:black;}
 	margin: 40px;
 	background:rgba(255,255,255,0.4);
 }
+
+
+.search_tool div.background {
+	opacity:0.1;
+}
+.search_tool div #entersearch{
+
+	font-family:"tahoma","Times New Roman";
+	font-size: 20px;
+	
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+}
+
+.search_tool div  #s_button {
+	margin: 10px;
+	margin-top: 15px;
+	margin-left: 350px;
+	font-size: 20px;
+	border-color:#6fa035;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color:#92d049;
+}
+
