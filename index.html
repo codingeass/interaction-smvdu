@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>Smvdu Underground</title>
+<title>SMVDU Underground</title>
 <link rel="stylesheet" href="public/css/main.css"/>
 </head>
-<body>
+<body background="public\img\1.jpg">
 <section class="first">
 
 <div class="logo">
-	<img src="public\img\LogoSMVDU.png"/>
+	
 </div>
 
 
@@ -21,27 +21,16 @@
 
 <section class="search_tool">
 
-	<div id="student_search">
-		<form action="search/student_search.php" method="post">
-			Student Name : <input type="search" name="student_name" id="entersearch">
-			<br/>
+	<div id="search">
+		<a href=""></a> &nbsp;&nbsp;&nbsp;&nbsp;
+		<form action="search.php" method="post">
+			Name : <input type="search" name="student_name" id="entersearch">
+			<br/>	
+			<input type="radio" name="type" value="student">Student<br>
+			<input type="radio" name="type" value="faculty">Faculty<br>
 			<input type="submit"  value="Search" id="s_button" >
 		</form>
 	</div>
-
-	<div id="faculty_search">
-		<form action="search/faculty_search.php" method="post">
-		Faculty Name : <input type="search" name="faculty_name" id="entersearch">
-		<br/>
-		<input type="submit"  value="Search" id="s_button" >
-		</form>
-	</div>
-
 </section>
-
-
-</section>
-
-
 </body>
 </html>
