@@ -1,0 +1,56 @@
+#stu_tab{
+		background:rgb(0,0,0);  
+    background: transparent\9;  
+    background:rgba(150,150,150,0.4);
+}
+
+table
+{
+border-collapse:collapse;
+margin:auto;
+}
+table, td, th
+{
+height :30%;
+border:1px solid grey;
+	background:rgb(0,0,0);  
+    background: transparent\9;  
+    background:rgba(255,255,255,0.1);
+}
+th{
+ background-color:#18647a;
+ color:white;
+ height:40px;
+font-family:"tahoma","Times New Roman";
+}
+td{
+	height :40%;
+	padding:15px;
+	font-family:"Times New Roman","tahoma";
+	text-align:center;
+}
+
+#back_page{
+
+	font-size:23px;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	position:absolute;
+	border:0px solid black;
+	height:5%;
+	min-width:10%;
+	text-align:center; 
+	font-family:"tahoma","Times New Roman";
+	color:white;
+	background-color:grey;
+	top:4%;
+	left:85%;
+	padding-top:3px;
+	padding-bottom:0px;
+	padding-right:2px;
+	padding-left:2px;
+}
+#back_page a:link {text-decoration:none;color:black;}
+#back_page a:visited {text-decoration:none;color:black;}
+#back_page a:hover {text-decoration:none;color:black;}
+#back_page a:active {text-decoration:none;color:black;}
