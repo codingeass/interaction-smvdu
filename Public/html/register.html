@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<link href="../css/reg.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<section id="first_entry">
+  <div id="first_form">
+  <form id="first_page">
+    Register<hr>
+    <table>
+     <tr><div><td>Name:</td><td><input type="text" placeholder="Full Name" name="full_name"></td></div></tr> 
+     <tr><div><td>Email:</td><td><input type="text" placeholder="email" name="email"></td></div> </tr>
+     <tr><div><td>Password:</td><td><input type="password" placeholder="password" name="password"></td></div></tr>
+     <tr><div><td>Confirm Password:</td><td><input type="password" placeholder="Confirm Password" name="confir_pass"></td></div></tr>
+     <tr><div><td>Select :</td><td><input type="radio" name="user_type" value="student">Student<input type="radio" name="user_type" value="faculty">Faculty</td></div></tr>
+     <tr><div><td>Sex :</td><td><input type="radio" name="sex" value="m">Male&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="f">Female</td></div></tr>
+     <tr><div><td><center><input type="reset" value="Reset" ></center></td><td><center><input type="button" value="Next" onclick="first_fun()"></center></td></div></tr>
+     <tr><td colspan="2" id="f_warning"></td></tr>
+    </table>
+  </form>
+  </div>
+</section>
+
+<section id="next_entry_stu" class="student">
+  <div id="first_form">
+  <form id="second_stu">
+    Student Entry<hr>
+  <table>
+    <div><tr><td>Entry No. *:</td><td><input type="text" placeholder="like.,2012ecs10" name="entry_no"></td></tr></div> 
+     <div><tr><td>Branch *:</td><td><select name="branch" selected="none">  
+              <option value="default" disabled="disabled" selected>--Select one--</option>
+              <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+              <option value="Industrial Bio Technology">Industrial Bio Technology</option>
+              <option value="Architecture">Architecture</option>
+              <option value="Master of Business Administration">Master of Business Administration</option>
+        </select>
+    </td></tr></div>
+    <div><tr><td>Semester *:</td><td><input type="number" name="semester" min="1" max="10">
+    </td></tr></div>
+    <div><tr><td>Date of Birth *:</td><td><input type="date" name="birth_date"></td></tr></div>
+    <div><tr><td>Date of Joining *:</td><td><input type="date" name="join_date"></td></tr></div> 
+    <div><tr><td>Parent Name *:</td><td><input type="text" placeholder="Parent Name" name="parent_name"></td></tr></div> 
+    <div><tr><td>Address :</td><td><input type="text" placeholder="address" name="address"></td></tr></div> 
+    <div><tr><td>Contact Number :</td><td><input type="text" placeholder="i.e.9797521898" name="contact_no"></td></tr></div> 
+    <div><tr><td>Projects :</td><td><input type="text" placeholder="like.library system,animation" name="projects"></td></tr></div> 
+    <div><tr><td>Area of Interest:</td><td><input type="text" placeholder="like java,robotics" name="area_interest"></td></tr></div> 
+    <div><tr><td>Profile Picture:</td><td> <input type="file" name="pic" accept="image/*"></td></tr></div> 
+    <div ><tr ><td id="ph_instruct" colspan="2">*max. size 64kb</td></tr></div>
+    <div><tr><td><input type="button" value="Back" onclick="stu_back()"></td><td><input type="button" value="Submit" onclick="stu_submit()"></td></tr></div>
+    <tr><td colspan="2" id="stu_warning"></td></tr> 
+     </table>
+     </form>
+   </div>
+</section>
+
+<section id="next_entry_fac">
+  <div id="first_form" >
+     <form id="third_fac">
+      Faculty Entry<hr>
+    <table> 
+     <div><tr><td>Department *:</td><td><select name="department"> 
+              <option value="default" disabled="disabled" selected>--Select one--</option>
+              <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+              <option value="Mechanical Engineering">Mechanical Engineering</option>
+              <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+              <option value="Industrial Bio Technology">Industrial Bio Technology</option>
+              <option value="Architecture">Architecture</option>
+              <option value="Master of Business Administration">Master of Business Administration</option>
+        </select>
+    </td></tr></div>
+    <div><tr><td>Designation *:</td><td><input type="text" placeholder="like.,professor" name="designation"></td></tr></div> 
+    <div><tr><td>Qualification *:</td><td><input type="text" placeholder="like.B.tech,MBA" name="qualification"></td></tr></div>
+    <div><tr><td>Date of Birth *:</td><td><input type="date" name="birth_date"></td></tr></div>
+    <div><tr><td>Date of Joining *:</td><td><input type="date" name="join_date"></td></tr></div> 
+    <div><tr><td>Address :</td><td><input type="text" placeholder="address" name="address"></td></tr></div> 
+    <div><tr><td>Contact Number :</td><td><input type="text" placeholder="i.e.9797521898" name="contact_no"></td></tr></div> 
+    <div><tr><td>Projects :</td><td><input type="text" placeholder="like.library system,animation" name="projects"></td></tr></div> 
+    <div><tr><td>Area of Interest:</td><td><input type="text" placeholder="like java,robotics" name="area_interest"></td></tr></div> 
+    <div><tr><td>Area of Specialization *:</td><td><input type="text" placeholder="eg.django,python" name="area_specialization"></td></tr></div> 
+    <div><tr><td>Profile Picture: </td><td><input type="file" name="pic" accept="image/*"></td></tr></div> 
+    <div ><tr ><td id="ph_instruct" colspan="2">*max. size 64kb</td></tr></div>
+    <div><tr><td><input type="button" value="Back" onclick="fac_back()"></td><td><input type="button" value="Submit"></td></tr></div> 
+    <tr><td colspan="2" id="fac_warning"></td></tr>
+    </table>
+    </form>
+  </div>
+</section>
+
+<script type="text/javascript" src="../js/reg.js"></script>
+
+</body>
+</html>
