@@ -1,0 +1,185 @@
+body {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+	background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+	background: gradient(to linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+	background: -o-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;		
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0px;
+	width: 1365px;
+	height: 660px;
+}
+
+
+#first_login{
+	height:70px;
+	width: 1365px;
+	background: transparent\9;
+	background:rgba(240,240,240,0.7);
+}
+
+#first_login div{
+	float: left;
+	margin: 20px;
+	font-size: 23px;
+}
+
+#first_login input{
+	font-size: 20px;
+}
+
+#text_display {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;
+	background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;
+	background: gradient(to linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;
+	background: -o-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;			
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	width: 450px;
+	height: 400px;
+	border-radius: 9px;
+	padding: 45px;
+	text-align: center;
+	font-size: 21px;
+}
+
+#registration_section{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;
+	background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;
+	background: gradient(to linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;
+	background: -o-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;			
+	position: absolute;
+	top: 150px;
+	left: 750px;
+	width: 450px;
+	height: 400px;
+	border-radius: 9px;
+	padding: 45px;
+	text-align: center;
+	font-size: 21px;
+}
+
+td input[type=button]{    
+width: 100px;
+background: #27AE60;
+font-weight: bold;
+color: white;
+border: 0 none;
+border-radius: 1px;
+cursor: pointer;
+padding: 10px 5px;
+margin: 10px 5px;
+margin-top: 25px;
+}
+
+#first_form{
+  border: 1px solid black;
+  border-radius: 8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  -o-border-radius:8px;
+  padding: 20px;  
+  text-align: center;
+  font-size: 23px;
+  padding-bottom: 0px;
+}
+
+
+#first_form td{
+  font-size: 18px;
+  padding-left: 25px;  
+}
+
+#first_form input{
+  font-size: 18px; 
+}
+
+
+#first_form td input[type=reset]{
+    width: 100px;
+background: #27AE60;
+font-weight: bold;
+color: white;
+border: 0 none;
+border-radius: 1px;
+cursor: pointer;
+padding: 10px 5px;
+margin: 10px 5px;
+margin-top: 25px;
+}
+
+#first_form td select{
+  font-size: 15px; 
+}
+
+#first_form #note_email{
+	font-size: 21px;
+	margin-bottom: 22px;
+}
+
+
+
+#next_entry_stu  #first_form{ 
+  position: absolute;
+  background-color:white; 
+  border: 1px solid black;
+  border-radius: 8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  -o-border-radius:8px;
+  padding: 20px;  
+  text-align: left;
+  font-size: 23px;
+  top: 60px;
+  padding-bottom: 0px;
+}
+
+#next_entry_fac  #first_form{ 
+  position: absolute;
+  background-color:white; 
+  border: 1px solid black;
+  border-radius: 8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  -o-border-radius:8px;
+  padding: 20px;  
+  text-align: left;
+  font-size: 23px;
+  top: 60px;
+  padding-bottom: 0px;
+}
+
+#first_all{
+	display: block;
+}
+/* student section*/
+
+#next_entry_stu{
+  display: none;
+}
+
+#next_entry_stu > #first_form{
+  top: 50px;
+  left: 400px;
+}
+
+/*faculty section*/
+
+
+#next_entry_fac{
+  display: none;
+}
+
+#next_entry_fac > #first_form{
+  top: 50px;
+  left: 400px;
+}
+
+#next_entry_fac > #first_form input[type=button] , #next_entry_stu > #first_form input[type=button]  {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top:18px;
+    margin-bottom: 18px; 
+}
+
