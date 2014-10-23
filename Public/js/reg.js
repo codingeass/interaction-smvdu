@@ -89,16 +89,16 @@ function stu_submit()
 		}
 		if(xmlhttp)
 		{
-			obj=document.getElementById("search_result");
 			
 			xmlhttp.open("GET",'public/php/stureg.php?name='+name+'&email='+email+'&pass='+pass+'&type='+type+'&sex='+sex+'&ent='+ent+'&bran='+bran+'&sem='+sem+'&bir='+bir+'&join='+join+'&add='+add+'&cont='+cont+'&pro='+pro+'&are='+are);
-			xmlhttp.send();
-			//obj.innerHTML="<a href='../public/php/student_autosearch.php?name=aman'>lko</a>";			
 			xmlhttp.onreadystatechange=function()
 			{
 				if(xmlhttp.readyState==4 && xmlhttp.status==200)
-					obj.innerHTML=xmlhttp.responseText;		
+					alert(""+xmlhttp.responseText);		
 			}
+			xmlhttp.send();
+			//obj.innerHTML="<a href='../public/php/student_autosearch.php?name=aman'>lko</a>";			
+//response is not coming correct			
 		}				
 	}
 	else
@@ -168,15 +168,13 @@ function fac_submit()
 		}
 		if(xmlhttp)
 		{
-			obj=document.getElementById("search_result");
-			
 			xmlhttp.open("GET",'public/php/facreg.php?name='+name+'&email='+email+'&pass='+pass+'&type='+type+'&sex='+sex+'&dep='+dep+'&desi='+desi+'&qua='+qua+'&bir='+bir+'&join='+join+'&add='+add+'&cont='+cont+'&pro='+pro+'&are='+are+'&spec='+spec);
 			xmlhttp.send();
 			//obj.innerHTML="<a href='../public/php/student_autosearch.php?name=aman'>lko</a>";			
 			xmlhttp.onreadystatechange=function()
 			{
 				if(xmlhttp.readyState==4 && xmlhttp.status==200)
-					obj.innerHTML=xmlhttp.responseText;		
+					alert(xmlhttp.responseText);		
 			}
 		}	
 	}
