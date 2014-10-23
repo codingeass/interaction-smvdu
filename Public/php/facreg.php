@@ -21,7 +21,7 @@ if( isset($_REQUEST["name"]) && isset($_REQUEST["email"]) && isset($_REQUEST["pa
 	$query="Select * from user where email='".strip_tags($_REQUEST["email"])."';";
 	$result=mysql_query($query);
 	while($res=mysql_fetch_array($result))
-		echo ('Email is already registered');
+		exit ('Email is already registered');
 
 	$query="Insert into user (name,email,password,type)values('".strip_tags($_REQUEST["name"])."','".strip_tags($_REQUEST["email"])."','".md5(md5(strip_tags($_REQUEST["pass"])))."','".strip_tags($_REQUEST["type"])."');";
 	$result=mysql_query($query)
