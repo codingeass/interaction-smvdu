@@ -6,21 +6,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="public/css/pro.css"/>
     <script type="text/javascript" src="public/js/search.js"></script>
+    <script type="text/javascript" src="public/js/view.js"></script>
 	</head>
 	<body>
       
     <section id="p_main">
       <section id="p_first">
           <ul>
-          <li><id>MENU</id></li>
+          <li><div>MENU</div></li>
           <hr>          
-          <li><id>Profile</id></li>
-          <li><id>Blogging</id></li>
-          <li><id>Search Profile</id></li>
-          <li><id>Feedback</id></li>
-          <li><id>Complaint</id></li>
-          <li><id>Feedback</id></li>
-          <li><id><a href="public/php/logout.php">Logout</a></id></li>
+          <li><div onclick="d_profile()" style="cursor:pointer">Profile</div></li>
+          <li><div>Blogging</div></li>
+          <li><div onclick="d_search()" style="cursor:pointer" >Search Profile</div></li>
+          <li><div>Feedback</div></li>
+          <li><div>Complaint</div></li>
+          <li><div>Feedback</div></li>
+          <li><div><a href="public/php/logout.php">Logout</a></div></li>
           <!--repair this code-->
           </ul>
       </section> 

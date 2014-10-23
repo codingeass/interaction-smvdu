@@ -58,3 +58,25 @@ td{
 	font-family:"Times New Roman","tahoma";
 	text-align:center;
 }
+
+#profile{
+	display: block;
+}
+
+#search{
+	display: none;
+	padding-top: 200px;
+	text-align: center;
+	font-size:20px;
+	width: 1095px;
+	height: 469px;
+	overflow: auto;
+}
+
+#search input{
+		font-size:23px; 	
+}
+#search input{
+		font-size:20px; 	
+}
+
