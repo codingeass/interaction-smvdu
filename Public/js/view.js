@@ -1,11 +1,13 @@
 function d_profile(){
 	document.getElementById("search").style.display = "none";
 	document.getElementById("profile").style.display = "block";
+	document.getElementById("others_profile").style.display = "none";
 }
 
 function d_search(){
 	document.getElementById("search").style.display = "block";
 	document.getElementById("profile").style.display = "none";
+	document.getElementById("others_profile").style.display = "none";
 }
 
 function othersearch(em){
@@ -29,6 +31,7 @@ function othersearch(em){
 					if(xmlhttp.readyState==4 && xmlhttp.status==200)
 						text.innerHTML=xmlhttp.responseText;
 					document.getElementById("search").style.display = "none";
+					document.getElementById("profile").style.display = "none";
 					document.getElementById("others_profile").style.display = "block";				
 				}				
 			}
