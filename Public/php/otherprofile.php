@@ -1,24 +1,24 @@
 <?php
         try{
-          require_once("public/php/connect.php");
+          require_once("connect.php");
 
-          if(!isset($_REQUEST['q'])){
-            session_start();
-          $que=mysql_query("SELECT * FROM user WHERE `email`='".strip_tags($_SESSION["email"])."'");
+          if(isset($_REQUEST['v'])){
+          $que=mysql_query("SELECT * FROM user WHERE `email`='".strip_tags($_REQUEST["v"])."'");
           if($que){
               while($res=mysql_fetch_assoc($que))
               {
                 $id=$res['id'];
+                $type=$res['type'];
                 break;
               }
 
           }
           else
             echo "<script>window.location.assign('index.php');</script>";
-          $query=mysql_query("SELECT * FROM ".strip_tags($_SESSION["type"]). " WHERE id = '".$id."' ;")
+          $query=mysql_query("SELECT * FROM ".$type. " WHERE id = '".$id."' ;")
           or die("error");
           if($query){
-            if(strip_tags($_SESSION["type"])=="student")
+            if($type=="student")
             {
               while($result=mysql_fetch_assoc($query)){
               echo "<table>";
@@ -39,13 +39,13 @@
               }
             }
             else
-            if(strip_tags($_SESSION["type"])=="faculty")
+            if($type=="faculty")
             {
                 while($result=mysql_fetch_assoc($query)){
               echo "<table>";
               echo "<tr><td>Name:</td><td>".$result['name']."</td></tr>";
               echo "<tr><td>Sex:</td><td>".$result['sex']."</td></tr>";
-              echo "<tr><td>Email:</td><td>".$_SESSION["email"]."</td></tr>";
+              echo "<tr><td>Email:</td><td>".strip_tags($_REQUEST["v"])."</td></tr>";
               echo "<tr><td>Date of Birth:</td><td>".$result['date_of_birth']."</td></tr>";
               echo "<tr><td>Date of joining:</td><td>".$result['date_of_joining']."</td></tr>";
               echo "<tr><td>Designation :</td><td>".$result['designation']."</td></tr>";

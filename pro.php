@@ -39,6 +39,9 @@
           <div id="search_text"></div>
       </section>
 
+      <section id="others_profile">
+      </section>
+
    </section>
 	</body>
 </html> 
