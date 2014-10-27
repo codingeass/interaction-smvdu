@@ -24,7 +24,7 @@
               echo "<table>";
               echo "<tr><td>Name:</td><td>".$result['name']."</td></tr>";
               echo "<tr><td>Sex:</td><td>".$result['sex']."</td></tr>";
-              echo "<tr><td>Email:</td><td>".$_SESSION["email"]."</td></tr>";
+              echo "<tr><td>Email:</td><td>".strip_tags($_REQUEST["v"])."</td></tr>";
               echo "<tr><td>Date of Birth:</td><td>".$result['date_of_birth']."</td></tr>";
               echo "<tr><td>Date of joining:</td><td>".$result['date_of_joining']."</td></tr>";
               echo "<tr><td>Entry No.:</td><td>".$result['entry_no']."</td></tr>";

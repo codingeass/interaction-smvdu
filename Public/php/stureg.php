@@ -24,7 +24,7 @@ if( isset($_REQUEST["name"]) && isset($_REQUEST["email"]) && isset($_REQUEST["pa
 	}
 		
 
-	$query="Insert into user (name,email,password,type)values('".strip_tags($_REQUEST["name"])."','".strip_tags($_REQUEST["email"])."','".md5(md5(strip_tags($_REQUEST["pass"])))."','".strip_tags($_REQUEST["type"])."');";
+	$query="Insert into user (name,email,password,type)values('".strtolower(strip_tags($_REQUEST["name"]))."','".strip_tags($_REQUEST["email"])."','".md5(md5(strip_tags($_REQUEST["pass"])))."','".strip_tags($_REQUEST["type"])."');";
 	$result=mysql_query($query)
                     or die('Invalid Entry');
 
@@ -38,6 +38,24 @@ if( isset($_REQUEST["name"]) && isset($_REQUEST["email"]) && isset($_REQUEST["pa
                     or die('Invalid Entry');
       echo 'You are registered successfully';
       //check for parameter of exit when change login page
+    $myfile = fopen("../xml/blog/".strip_tags($_REQUEST["email"]).".xml", "w") or die("Unable to open file!");
+	$txt = "<?xml version='1.0' encoding='utf-8' standalone='no'?>
+	<!DOCTYPE chatting [
+	<!ELEMENT Complete (BlogSection , title , author , content , comments , comment)>
+	<!ELEMENT BlogSection (title , author , content , comments , comment)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT time (#PCDATA)>
+	<!ELEMENT content (#PCDATA)>
+	<!ELEMENT comments (comment)>
+	<!ELEMENT comment (#PCDATA)>
+	]>
+	<Complete>
+	</Complete>
+	";
+	fwrite($myfile, $txt);
+	fclose($myfile);
+    
     }
 }
 else
