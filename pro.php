@@ -16,9 +16,9 @@
           <li><div>MENU</div></li>
           <hr>          
           <li><div onclick="d_profile()" style="cursor:pointer">Profile</div></li>
-          <li><div>Blogging</div></li>
+          <li><div>BlogPost</div></li>
           <li><div onclick="d_search()" style="cursor:pointer" >Search Profile</div></li>
-          <li><div>Feedback</div></li>
+          <li><div onclick="d_edit()">Edit Blog</div></li>
           <li><div>Complaint</div></li>
           <li><div>Feedback</div></li>
           <li><div><a href="public/php/logout.php">Logout</a></div></li>
@@ -26,9 +26,11 @@
           </ul>
       </section> 
 
+<section id="p_second">
       <section id="profile">
           <?php
             require("public/php/profile.php");
+            //date("F j, Y, g:i a");  
           ?>
       </section>
 
@@ -40,6 +42,20 @@
       </section>
 
       <section id="others_profile">
+      </section>
+
+
+      <section id="editfirst">
+          <div onclick="editacontent()" id="s1" style="cursor:pointer;">ADD new blog post</div>
+          <br/>
+          <div onclick="editcontent()" id="s2" style="cursor:pointer;"> Edit older Post</div>
+      </section>
+
+      <section id="add_content">
+        <center>Post : <input type="text" size="60" name="title">&nbsp;&nbsp;&nbsp;<button onclick="addcontent()">Publish</button>&nbsp;&nbsp;<button onclick="addback()">Close</button><center>
+        <br/><br/>
+        <textarea rows="50" cols="100" name="content">
+        </textarea>
       </section>
 
    </section>

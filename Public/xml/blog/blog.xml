@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE chatting [
+<!ELEMENT Complete (BlogSection , title , author , email , time )>
+<!ELEMENT BlogSection (title , author , email , time )>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+]>
+<Complete>
+
+<BlogSection>
+<title>Stringology is Magic</title>
+<author>
+	amandeep
+</author>
+<email>2012ecs25</email>
+<time>1</time>
+</BlogSection>
+
+<BlogSection>
+<title>I don't know</title>
+<author>
+	amandeep
+</author>
+<email>2012ecs25</email>
+<time>2</time>
+</BlogSection>
+
+<BlogSection>
+<title>Usable security</title>
+<author>
+	amandeep
+</author>
+<email>2012ecs25</email>
+<time>3</time>
+</BlogSection>
+
+</Complete>

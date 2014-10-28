@@ -1,5 +1,5 @@
 <?php
-	
+
 	if(isset($_REQUEST["email"])&&isset($_REQUEST["pass"]))
 	{
 		require("connect.php");
@@ -12,6 +12,7 @@
 			$_SESSION["email"] = strip_tags($_REQUEST["email"]);
 			$_SESSION["type"]=$res['type'];
 			$_SESSION["logti"]=time();
+			$_SESSION["user"]=$res['name'];
 			$_SESSION["uuid"]=md5($_SESSION["logti"].strip_tags($_REQUEST["pass"]));
 			$i++;
 			//print_r($_SESSION);
@@ -22,5 +23,6 @@
 	} 
 	else
 		echo "<script>window.location.assign('../../index.php?v=false');</script>";
+
 
 ?>

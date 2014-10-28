@@ -29,8 +29,8 @@ body{
 #p_second{
 	background-color: #cdd4d5;	
 	width: 1095px;
-	height: 679px;
-	overflow: scroll;
+	height: 662px;
+	overflow: auto;
 }
 
 table
@@ -60,7 +60,7 @@ td{
 }
 
 #profile{
-	display: block;
+	display: none;
 }
 
 #search{
@@ -82,4 +82,24 @@ td{
 
 #others_profile{
 	display: none;
+}
+
+#editfirst{
+	display: none;
+	font-size: 23px;
+	text-align: center;
+	position: relative;
+	top: 230px;
+}
+#add_content{
+  text-align: center;
+  font-family:  Georgia, "Times New Roman",Serif;
+  font-size: 23px;
+  margin-top:50px ; 
+  margin-bottom:20px;
+}
+
+#add_content input{
+  font-family:  Georgia, "Times New Roman",Serif;
+  font-size: 23px;
 }

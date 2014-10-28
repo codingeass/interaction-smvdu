@@ -20,7 +20,9 @@
 		{
 			if($_REQUEST["v"]=="false")
 				echo "<section id='popup'><script>alert('Wrong Password');</script></section>";
-		}
+		  if($_REQUEST['v']=="er")
+        echo "<section id='popup'><script>alert('Check Username and password');</script></section>";
+    }
 	?>
 	<section id="text_display">
 		Login here : <br> To connect with of your classmate
