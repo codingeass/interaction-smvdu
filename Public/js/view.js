@@ -18,6 +18,16 @@ function editacontent(){
 	document.getElementById("add_content").style.display="block";
 }
 
+function d_post(){
+	document.getElementById("search").style.display = "none";
+	document.getElementById("profile").style.display = "none";
+	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("editfirst").style.display="none";
+	document.getElementById("add_content").style.display="none";
+	document.getElementById("blogposts").style.display="block";
+	listpost();
+}
+
 function d_edit(){
 	document.getElementById("search").style.display = "none";
 	document.getElementById("profile").style.display = "none";

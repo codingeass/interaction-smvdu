@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="public/css/pro.css"/>
+    <script type="text/javascript" src="public/js/post.js"></script>    
     <script type="text/javascript" src="public/js/search.js"></script>
     <script type="text/javascript" src="public/js/view.js"></script>
 	</head>
@@ -16,7 +17,7 @@
           <li><div>MENU</div></li>
            <hr>          
           <li><div onclick="d_profile()" style="cursor:pointer">Profile</div></li>
-          <li><div>BlogPost</div></li>
+          <li><div onclick="d_post()" style="cursor:pointer">BlogPost</div></li>
           <li><div onclick="d_search()" style="cursor:pointer" >Search Profile</div></li>
           <li><div onclick="d_edit()" style="cursor:pointer" >Edit Blog</div></li>
           <li><div>Complaint</div></li>
@@ -56,6 +57,10 @@
         <br/><br/>
         <textarea rows="50" cols="100" name="content">
         </textarea>
+      </section>
+
+      <section id="blogposts">
+          BlogPost
       </section>
 
    </section>
