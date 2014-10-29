@@ -14,11 +14,11 @@
       <section id="p_first">
           <ul>
           <li><div>MENU</div></li>
-          <hr>          
+           <hr>          
           <li><div onclick="d_profile()" style="cursor:pointer">Profile</div></li>
           <li><div>BlogPost</div></li>
           <li><div onclick="d_search()" style="cursor:pointer" >Search Profile</div></li>
-          <li><div onclick="d_edit()">Edit Blog</div></li>
+          <li><div onclick="d_edit()" style="cursor:pointer" >Edit Blog</div></li>
           <li><div>Complaint</div></li>
           <li><div>Feedback</div></li>
           <li><div><a href="public/php/logout.php">Logout</a></div></li>

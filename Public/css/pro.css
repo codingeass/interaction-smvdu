@@ -60,7 +60,7 @@ td{
 }
 
 #profile{
-	display: none;
+	display: block;
 }
 
 #search{
@@ -91,12 +91,14 @@ td{
 	position: relative;
 	top: 230px;
 }
+
 #add_content{
   text-align: center;
   font-family:  Georgia, "Times New Roman",Serif;
   font-size: 23px;
   margin-top:50px ; 
   margin-bottom:20px;
+  display: none;
 }
 
 #add_content input{

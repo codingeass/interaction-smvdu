@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE chatting [
+<!ELEMENT Complete (BlogSection , title , author , time , content , comments , comment)>
+<!ELEMENT BlogSection (title , author , content , time , comments , comment)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT comments (comment)>
+<!ELEMENT comment (#PCDATA)>
+]>
+<Complete>
+<BlogSection>
+<title>Stringology is Magic</title>
+<author>
+amandeep
+</author>
+<time>1</time>
+<content>
+	You have been given a string T with n lowercase letters T[1..n]. For each substrings T[l..r], we can assign them two values, k1 and k2, which are defined as following.
+k1 is the number of different substrings which are lexicographically smaller than T[l..r]. There are (n + 1) * n / 2 substrings in total.
+k2 indicates the number of substrings which are as same as T[l..r] but have smaller left subscript than l.
+In this problem, you need to answer the following two queries:
+Select k1 k2: report l and r, such that T[l..r] are assigned values k1 and k2.
+Rank l r: output the assigned k1 and k2 of T[l..r].
+</content>	
+<comments>
+	<comment>Nice</comment>
+	<comment>Hello</comment>
+<comment>amandeep</comment><comment>laxmikant</comment><comment>vishal</comment><comment>parbhat</comment><comment>tryu</comment><comment>gyu</comment></comments>
+</BlogSection>
+<BlogSection>
+<title>I don't know</title>
+<author>
+Codechef
+</author>
+<time>2</time>
+<content>
+	You have been given a string T with n lowercase letters T[1..n]. For each substrings T[l..r], we can assign them two values, k1 and k2, which are defined as following.
+k1 is the number of different substrings which are lexicographically smaller than T[l..r]. There are (n + 1) * n / 2 substrings in total.
+k2 indicates the number of substrings which are as same as T[l..r] but have smaller left subscript than l.
+In this problem, you need to answer the following two queries:
+Select k1 k2: report l and r, such that T[l..r] are assigned values k1 and k2.
+Rank l r: output the assigned k1 and k2 of T[l..r].
+</content>	
+<comments>
+	<comment>Nice</comment>
+	<comment>Hello</comment>
+<comment>unknown</comment><comment>laxmikant</comment><comment>hellsing</comment><comment>alucart</comment><comment>police</comment></comments>
+</BlogSection>
+<BlogSection><title>Usable security</title><author>amandeep</author>
+<time>3</time>
+<content>In many systems, human users are a critical part of the security process. They create passwords, follow security protocols, and share information that can maintain or destroy the security of a system. However, many secure systems are designed with little to no attention paid to people's cognitive abilities, workflow, or tasks. As a result, people find ways around the security obstacles that get in the way of their work.This course focuses on how to design and build secure systems with a human-centric focus. We will look at basic principles of human-computer interaction, including the basics of humans' cognitive abilities, principles of usability, design techniques, and evaluation methods. We will then apply these insights to the design of secure systems with the goal of developing security measures that respect human performance and their goals within a system.Through hands-on exercises designing, building, evaluating, and critiquing systems, students will learn how to integrate usability into secure software. The course will specifically focus on authentication mechanisms, browsing security, privacy and social media, and mobile security.hola mecha</content><comments><comment>hola</comment><comment>pokemon</comment></comments></BlogSection><BlogSection><title>Hill Climb Racing</title><author>Amandeep Gupta</author><time>October 29, 2014, 12:32 pm</time><content>        Hill Climb Racing</content><comments/></BlogSection></Complete>

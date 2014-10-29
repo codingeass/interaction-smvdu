@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE chatting [
-<!ELEMENT Complete (BlogSection , title , author , email , time )>
-<!ELEMENT BlogSection (title , author , email , time )>
+<!ELEMENT Complete (BlogSection , title , author , email , time)>
+<!ELEMENT BlogSection (title , author , email , time)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
@@ -36,4 +36,4 @@
 <time>3</time>
 </BlogSection>
 
-</Complete>
+<BlogSection><title>Hill Climb Racing</title><author>Amandeep Gupta</author><email>2012ecs25@smvdu.ac.in</email><time>October 29, 2014, 12:32 pm</time></BlogSection></Complete>

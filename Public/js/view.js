@@ -15,10 +15,22 @@ function editacontent(){
 	document.getElementById("profile").style.display = "none";
 	document.getElementById("others_profile").style.display = "none";
 	document.getElementById("editfirst").style.display="none";
+	document.getElementById("add_content").style.display="block";
+}
+
+function d_edit(){
+	document.getElementById("search").style.display = "none";
+	document.getElementById("profile").style.display = "none";
+	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("editfirst").style.display="block";
+	document.getElementById("add_content").style.display="none";
+}
+
+function addback(){
+	d_edit();
 }
 
 function addcontent(){
-	alert("hw");
 	var title= document.getElementsByName('title')[0].value;
 	var content=document.getElementsByName("content")[0].value;	
 			var xmlhttp=false;
