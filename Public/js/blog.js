@@ -40,9 +40,9 @@ var url = (function(a) {
 		{
 			if(x[i].getElementsByTagName("time")[0].childNodes[0].nodeValue==url["t"]){
 			var mk="<center><h1>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h1></center>";
-			mk=mk+"<div style='float:right;font-size:20px;'>Author:"+x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue+"</div>";
+			mk=mk+"<div style='float:right;font-size:20px;margin:23px'>Author:"+x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue+"</div>";
 			mk=mk+"<div style='font-size:19px'>"+x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue+"</div>";
-			mk=mk+"<br/><br/><div style='font-size:19px'>Comment</div>";
+			mk=mk+"<br/><br/><div style='font-size:19px;font-weight: bold;'>Comment:</div><br/>";
 			mg.innerHTML=mk;
 			mk="";
 			pl=i;
