@@ -14,14 +14,16 @@
 			$_SESSION["logti"]=time();
 			$_SESSION["user"]=$res['name'];
 			$_SESSION["uuid"]=md5($_SESSION["logti"].strip_tags($_REQUEST["pass"]));			
+			setcookie("em","".strip_tags($_REQUEST["email"]),false,'/',false,false);
+			echo "hello";
 			$i++;
 			//print_r($_SESSION);
-			echo "<script>window.location.assign('../../pro.php');</script>";			
+			//echo "<script>window.location.assign('../../pro.php');</script>";			
 		}
-		if($i==0)
-		echo "<script>window.location.assign('../../index.php?v=er');</script>"; 
+		//if($i==0)
+		//echo "<script>window.location.assign('../../index.php?v=er');</script>"; 
 	} 
-	else
-		echo "<script>window.location.assign('../../index.php?v=false');</script>";
+	//else
+		//echo "<script>window.location.assign('../../index.php?v=false');</script>";
 	
 ?>

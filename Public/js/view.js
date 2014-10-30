@@ -1,39 +1,55 @@
 function d_profile(){
+	document.getElementById("edit_content").style.display="none";	
 	document.getElementById("search").style.display = "none";
 	document.getElementById("profile").style.display = "block";
 	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("blogposts").style.display="none";
+	document.getElementById("editfirst").style.display="none";
+	document.getElementById("add_content").style.display="none";
+	document.getElementById("select_post").style.display="none";
 }
 
 function d_search(){
+	document.getElementById("edit_content").style.display="none";	
 	document.getElementById("search").style.display = "block";
 	document.getElementById("profile").style.display = "none";
 	document.getElementById("others_profile").style.display = "none";
-}
-
-function editacontent(){
-	document.getElementById("search").style.display = "none";
-	document.getElementById("profile").style.display = "none";
-	document.getElementById("others_profile").style.display = "none";
-	document.getElementById("editfirst").style.display="none";
-	document.getElementById("add_content").style.display="block";
-}
-
-function d_post(){
-	document.getElementById("search").style.display = "none";
-	document.getElementById("profile").style.display = "none";
-	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("blogposts").style.display="none";
 	document.getElementById("editfirst").style.display="none";
 	document.getElementById("add_content").style.display="none";
+	document.getElementById("select_post").style.display="none";}
+
+function editacontent(){
+	document.getElementById("edit_content").style.display="none";	
+	document.getElementById("search").style.display = "none";
+	document.getElementById("profile").style.display = "none";
+	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("blogposts").style.display="none";
+	document.getElementById("editfirst").style.display="none";
+	document.getElementById("add_content").style.display="block";
+	document.getElementById("select_post").style.display="none";}
+
+function d_post(){
+	document.getElementById("edit_content").style.display="none";	
+	document.getElementById("search").style.display = "none";
+	document.getElementById("profile").style.display = "none";
+	document.getElementById("others_profile").style.display = "none";
 	document.getElementById("blogposts").style.display="block";
+	document.getElementById("editfirst").style.display="none";
+	document.getElementById("add_content").style.display="none";
+	document.getElementById("select_post").style.display="none";
 	listpost();
 }
 
 function d_edit(){
+	document.getElementById("edit_content").style.display="none";	
 	document.getElementById("search").style.display = "none";
 	document.getElementById("profile").style.display = "none";
 	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("blogposts").style.display="none";
 	document.getElementById("editfirst").style.display="block";
 	document.getElementById("add_content").style.display="none";
+	document.getElementById("select_post").style.display="none";	
 }
 
 function addback(){

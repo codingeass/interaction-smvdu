@@ -60,7 +60,7 @@ td{
 }
 
 #profile{
-	display: block;
+	display: none;
 }
 
 #search{
@@ -137,3 +137,34 @@ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	}
+
+
+a:link {text-decoration:none;color:black;}
+a:visited {text-decoration:none;color:black;}
+a:hover {text-decoration:underline;color:black;}
+a:active {text-decoration:underline;color:black;}
+a:active {text-decoration:underline;color:black;}
+.sign1	a:hover {text-decoration:none;color:black;}
+.sign1	a:active {text-decoration:none;color:black;}
+
+#edit_content{
+  text-align: center;
+  font-family:  Georgia, "Times New Roman",Serif;
+  font-size: 23px;
+  display: none;
+  margin-top:50px ; 
+  margin-bottom:20px;
+}
+
+#edit_content input{
+  font-family:  Georgia, "Times New Roman",Serif;
+  font-size: 23px;
+}
+
+#select_post{
+	padding-top: 54px;
+	text-align: center;
+  font-family:  Georgia, "Times New Roman",Serif;
+  font-size: 23px;
+  display: none;
+}

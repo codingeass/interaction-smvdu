@@ -8,6 +8,9 @@
     <script type="text/javascript" src="public/js/post.js"></script>    
     <script type="text/javascript" src="public/js/search.js"></script>
     <script type="text/javascript" src="public/js/view.js"></script>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
 	</head>
 	<body>
       
@@ -63,6 +66,20 @@
           BlogPost
       </section>
 
+
+      <section id="select_post">
+      Select Post from given below :<br/>
+      </section>
+
+      <section id="edit_content">
+      <center>Post : <input type="text" size="60" name="title">&nbsp;&nbsp;&nbsp;<button onclick="upcontent()">Update</button>&nbsp;&nbsp;<button onclick="adduback()">Close</button><center>
+    <br/><br/>
+    <textarea rows="50" cols="100" name="content">
+    </textarea>
+    <section id="edit_comment"></section>
+    </section>
+
    </section>
+   <script type="text/javascript"> document.onload=editcontent();</script>
 	</body>
 </html> 
