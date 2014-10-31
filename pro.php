@@ -24,7 +24,8 @@
           <li><div onclick="d_post()" style="cursor:pointer">BlogPost</div></li>
           <li><div onclick="d_search()" style="cursor:pointer" >Search Profile</div></li>
           <li><div onclick="d_edit()" style="cursor:pointer" >Edit Blog</div></li>
-          <li><div>Complaint</div></li>
+          <li><div onclick="d_complaint()" style="cursor:pointer">Complaint</div></li>
+          <li><div onclick="d_feedback()" style="cursor:pointer">Feedback</div></li>
           <li><div onclick="d_inbox()" style="cursor:pointer">Message</div></li>
           <li><div><a href="public/php/logout.php">Logout</a></div></li>
           <!--repair this code-->
@@ -91,6 +92,14 @@
     </section>
 
     <section id="message_inbox">
+    </section>
+
+    <section id="feedback">
+      <table>
+          <tr><td>Subject :</td><td><input type="text" name="subject" required></td></tr>
+          <tr><td>Message :</td><td><textarea name="feedback_message" rows="10" cols="50" maxlength="500" required></textarea>Limit:500 characters</td></tr>
+          <tr><td><input type="button" value="Send Feedback" onclick="feedback_send()"></td></tr>
+        </table>
     </section>
 
   </body>
