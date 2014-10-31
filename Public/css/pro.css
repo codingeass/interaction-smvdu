@@ -60,7 +60,7 @@ td{
 }
 
 #profile{
-	display: none;
+	display: block;
 }
 
 #search{
@@ -213,4 +213,19 @@ a:active {text-decoration:underline;color:black;}
 
 #message_new{
 	background-color: #7ce583;	
+}
+
+#feedback{
+	top: 100px;
+	position: relative;
+	display: none;
+}
+
+#feedback td{
+	text-align: left;
+}
+/*remove duplicacy*/
+
+#feedback input["button"]:before{
+	text-align: center;
 }
