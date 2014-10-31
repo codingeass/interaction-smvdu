@@ -6,7 +6,9 @@ function d_profile(){
 	document.getElementById("blogposts").style.display="none";
 	document.getElementById("editfirst").style.display="none";
 	document.getElementById("add_content").style.display="none";
-	document.getElementById("select_post").style.display="none";
+	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";		
+	document.getElementById("message_inbox").style.display="none";
 }
 
 function d_search(){
@@ -17,7 +19,10 @@ function d_search(){
 	document.getElementById("blogposts").style.display="none";
 	document.getElementById("editfirst").style.display="none";
 	document.getElementById("add_content").style.display="none";
-	document.getElementById("select_post").style.display="none";}
+	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";		
+	document.getElementById("message_inbox").style.display="none";
+}
 
 function editacontent(){
 	document.getElementById("edit_content").style.display="none";	
@@ -27,7 +32,10 @@ function editacontent(){
 	document.getElementById("blogposts").style.display="none";
 	document.getElementById("editfirst").style.display="none";
 	document.getElementById("add_content").style.display="block";
-	document.getElementById("select_post").style.display="none";}
+	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";		
+	document.getElementById("message_inbox").style.display="none";
+}
 
 function d_post(){
 	document.getElementById("edit_content").style.display="none";	
@@ -37,7 +45,9 @@ function d_post(){
 	document.getElementById("blogposts").style.display="block";
 	document.getElementById("editfirst").style.display="none";
 	document.getElementById("add_content").style.display="none";
-	document.getElementById("select_post").style.display="none";
+	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";		
+	document.getElementById("message_inbox").style.display="none";
 	listpost();
 }
 
@@ -50,6 +60,22 @@ function d_edit(){
 	document.getElementById("editfirst").style.display="block";
 	document.getElementById("add_content").style.display="none";
 	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";		
+	document.getElementById("message_inbox").style.display="none";
+}
+
+function d_inbox(){
+	document.getElementById("edit_content").style.display="none";	
+	document.getElementById("search").style.display = "none";
+	document.getElementById("profile").style.display = "none";
+	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("blogposts").style.display="none";
+	document.getElementById("editfirst").style.display="none";
+	document.getElementById("add_content").style.display="none";
+	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";	
+	document.getElementById("message_inbox").style.display="block";	
+	message_inbox();
 }
 
 function addback(){
@@ -110,7 +136,7 @@ function othersearch(em){
 						text.innerHTML=xmlhttp.responseText;
 					document.getElementById("search").style.display = "none";
 					document.getElementById("profile").style.display = "none";
-					document.getElementById("others_profile").style.display = "block";				
+					document.getElementById("others_profile").style.display = "block";	
 				}				
 			}
 }

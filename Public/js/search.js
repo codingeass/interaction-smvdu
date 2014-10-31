@@ -33,7 +33,9 @@ function editcontent(){
 	document.getElementById("editfirst").style.display="none";
 	document.getElementById("add_content").style.display="none";
 	document.getElementById("select_post").style.display="block";
-	document.getElementById("edit_content").style.display="none";
+	document.getElementById("edit_content").style.display="none";	
+	document.getElementById("message_wr").style.display="none";	
+	document.getElementById("message_inbox").style.display="none";
 	//alert();
 	if (window.XMLHttpRequest)
 		  {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -80,7 +82,9 @@ function display_edit(i){
 	document.getElementById("blogposts").style.display="none";
 	document.getElementById("editfirst").style.display="none";
 	document.getElementById("add_content").style.display="none";
-	document.getElementById("select_post").style.display="none";
+	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";	
+	document.getElementById("message_inbox").style.display="none";
 		if (window.XMLHttpRequest)
 		  {// code for IE7+, Firefox, Chrome, Opera, Safari
 		  xmlhttp=new XMLHttpRequest();
