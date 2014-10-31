@@ -8,6 +8,7 @@
     <script type="text/javascript" src="public/js/post.js"></script>    
     <script type="text/javascript" src="public/js/search.js"></script>
     <script type="text/javascript" src="public/js/view.js"></script>
+    <script type="text/javascript" src="public/js/message.js"></script>
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
@@ -24,7 +25,7 @@
           <li><div onclick="d_search()" style="cursor:pointer" >Search Profile</div></li>
           <li><div onclick="d_edit()" style="cursor:pointer" >Edit Blog</div></li>
           <li><div>Complaint</div></li>
-          <li><div>Feedback</div></li>
+          <li><div onclick="d_inbox()" style="cursor:pointer">Message</div></li>
           <li><div><a href="public/php/logout.php">Logout</a></div></li>
           <!--repair this code-->
           </ul>
@@ -79,7 +80,18 @@
     <section id="edit_comment"></section>
     </section>
 
-   </section>
-   <script type="text/javascript"> document.onload=editcontent();</script>
-	</body>
+
+    <section id="message_wr">
+      <table>
+      <tr><td>Recipient :</td><td><input type="email" name="to_email" disabled="true"></td></tr>
+      <tr><td>Message :</td><td><textarea name="content_message" rows="10" cols="50" maxlength="500" required></textarea>Limit:500 characters</td></tr>
+      <tr><td><input type="button" value="Send Message" onclick="message_com()"></td></tr>
+      </table>
+      <input type="hidden" name="email_h">
+    </section>
+
+    <section id="message_inbox">
+    </section>
+
+  </body>
 </html> 
