@@ -62,7 +62,32 @@ function message_inbox(){
 				{
 					if(xmlhttp.readyState==4 && xmlhttp.status==200)
 					{
-						document.getElementById("message_inbox").innerHTML="<center>Inbox</center>"+xmlhttp.responseText;						
+						document.getElementById("message_inbox").innerHTML="<center> <mess onclick='message_inbox()' style='cursor:pointer;font-weight:bold;'>Inbox</mess>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mess onclick='message_outbox()' style='cursor:pointer'>Outbox</mess></center>"+xmlhttp.responseText;						
+					}				
+				}				
+			}	
+}
+
+function message_outbox(){
+	var xmlhttp=false;
+			if (window.XMLHttpRequest)
+			{// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp=new XMLHttpRequest();
+			}
+			else
+			{// code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			if(xmlhttp)
+			{
+				
+				xmlhttp.open("GET",'public/php/outbox_message.php');
+				xmlhttp.send();
+				xmlhttp.onreadystatechange=function()
+				{
+					if(xmlhttp.readyState==4 && xmlhttp.status==200)
+					{
+						document.getElementById("message_inbox").innerHTML="<center> <mess onclick='message_inbox()' style='cursor:pointer;'>Inbox</mess>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mess onclick='message_outbox()' style='cursor:pointer;font-weight:bold;'>Outbox</mess></center>"+xmlhttp.responseText;						
 					}				
 				}				
 			}	
