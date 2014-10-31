@@ -8,7 +8,8 @@ function d_profile(){
 	document.getElementById("add_content").style.display="none";
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";		
-	document.getElementById("message_inbox").style.display="none";
+	document.getElementById("message_inbox").style.display="none";	
+	document.getElementById("feedback").style.display="none";
 }
 
 function d_search(){
@@ -22,6 +23,7 @@ function d_search(){
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";
+	document.getElementById("feedback").style.display="none";
 }
 
 function editacontent(){
@@ -35,6 +37,7 @@ function editacontent(){
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";
+	document.getElementById("feedback").style.display="none";
 }
 
 function d_post(){
@@ -48,6 +51,7 @@ function d_post(){
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";
+	document.getElementById("feedback").style.display="none";
 	listpost();
 }
 
@@ -62,6 +66,7 @@ function d_edit(){
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";
+	document.getElementById("feedback").style.display="none";
 }
 
 function d_inbox(){
@@ -74,8 +79,39 @@ function d_inbox(){
 	document.getElementById("add_content").style.display="none";
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";	
-	document.getElementById("message_inbox").style.display="block";	
+	document.getElementById("message_inbox").style.display="block";
+	document.getElementById("feedback").style.display="none";	
 	message_inbox();
+}
+
+function d_complaint(){
+	document.getElementById("edit_content").style.display="none";	
+	document.getElementById("search").style.display = "none";
+	document.getElementById("profile").style.display = "none";
+	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("blogposts").style.display="none";
+	document.getElementById("editfirst").style.display="none";
+	document.getElementById("add_content").style.display="none";
+	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";	
+	document.getElementById("message_inbox").style.display="none";	
+	//document.getElementById("complaint").style.display="block";
+	document.getElementById("feedback").style.display="none";				
+}
+
+function d_feedback(){
+	document.getElementById("edit_content").style.display="none";	
+	document.getElementById("search").style.display = "none";
+	document.getElementById("profile").style.display = "none";
+	document.getElementById("others_profile").style.display = "none";
+	document.getElementById("blogposts").style.display="none";
+	document.getElementById("editfirst").style.display="none";
+	document.getElementById("add_content").style.display="none";
+	document.getElementById("select_post").style.display="none";	
+	document.getElementById("message_wr").style.display="none";	
+	document.getElementById("message_inbox").style.display="none";	
+	//document.getElementById("complaint").style.display="none";	
+	document.getElementById("feedback").style.display="block";				
 }
 
 function addback(){
@@ -136,7 +172,8 @@ function othersearch(em){
 						text.innerHTML=xmlhttp.responseText;
 					document.getElementById("search").style.display = "none";
 					document.getElementById("profile").style.display = "none";
-					document.getElementById("others_profile").style.display = "block";	
+					document.getElementById("others_profile").style.display = "block";
+					document.getElementById("message_inbox").style.display = "none";	
 				}				
 			}
 }

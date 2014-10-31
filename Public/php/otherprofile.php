@@ -21,6 +21,7 @@
             if($type=="student")
             {
               while($result=mysql_fetch_assoc($query)){
+              echo "<div id='message'><button onclick=\"message_send('".$result['id']."','".$result['name']."')\">Send Message</button></div>";
               echo "<table>";
               echo "<tr><td>Name:</td><td>".$result['name']."</td></tr>";
               echo "<tr><td>Sex:</td><td>".$result['sex']."</td></tr>";
@@ -42,6 +43,7 @@
             if($type=="faculty")
             {
                 while($result=mysql_fetch_assoc($query)){
+              echo "<div id='message'><button onclick=\"message_send('".$result['id']."','".$result['name']."')\">Send Message</button></div>";
               echo "<table>";
               echo "<tr><td>Name:</td><td>".$result['name']."</td></tr>";
               echo "<tr><td>Sex:</td><td>".$result['sex']."</td></tr>";

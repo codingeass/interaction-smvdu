@@ -11,9 +11,10 @@ require_once("connect.php");
 	echo "<table><tr><th>To</th> <th>Message</th> <th>Time</th></tr>";
 	$result=mysql_query($query);
 	while ($msg=mysql_fetch_assoc($result)) {
-		$query2="SELECT `name` FROM user WHERE `id`=".$msg['to'];
+		$query2="SELECT `name` , `email` FROM user WHERE `id`=".$msg['to'];
 		$result2=mysql_query($query2);
-		echo "<tr><td>".mysql_fetch_assoc($result2)['name']."</td> <td>".$msg['content']."</td> <td>".$msg['time']."</td></tr>";		
+		$temp=mysql_fetch_assoc($result2);
+		echo "<tr><td onclick=\"othersearch('".$temp['email']."')\" style='cursor:pointer;'>".$temp['name']."</td> <td>".$msg['content']."</td> <td>".$msg['time']."</td></tr>";		
 	}
 	echo "</table>";
 ?>

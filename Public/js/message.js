@@ -11,6 +11,7 @@ function message_send (id,name) {
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="block";	
 	document.getElementById("message_inbox").style.display="none";
+	document.getElementById("feedback").style.display="none";
 }
 
 function message_com(){
@@ -91,4 +92,30 @@ function message_outbox(){
 					}				
 				}				
 			}	
+}
+
+function feedback_send(){
+	var xmlhttp=false;
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	if(xmlhttp)
+	{
+		
+		xmlhttp.open("GET",'public/php/feedback.php?subject='+document.getElementsByName("subject")[0].value+'&message='+document.getElementsByName("feedback_message")[0].value);
+		xmlhttp.send();
+		xmlhttp.onreadystatechange=function()
+		{
+			if(xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				alert("Message Sent");
+			}				
+		}				
+	}	
+
 }
