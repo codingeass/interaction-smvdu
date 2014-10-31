@@ -168,3 +168,49 @@ a:active {text-decoration:underline;color:black;}
   font-size: 23px;
   display: none;
 }
+
+#message{
+	position: absolute;
+	top: 40px;
+	left: 1200px;	
+}
+
+#message button{
+	height: 30px;	
+  font-family:  Georgia, "Times New Roman",Serif;
+  font-size: 18px;
+  background-color: #79b2e3;
+  border-radius: 8px;
+}
+
+#message_wr{
+	top: 100px;
+	position: relative;
+	display: none;
+}
+
+#message_wr td{
+	text-align: left;
+}
+
+#message_wr input["button"]:before{
+	text-align: center;
+}
+
+#message_inbox{
+	display: none;
+}
+
+#message_inbox{
+	display: none;
+	position: relative;
+	top: 60px;
+}
+
+#message_inbox center{
+	font-size: 23px;
+}
+
+#message_new{
+	background-color: #7ce583;	
+}
