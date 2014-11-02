@@ -273,3 +273,9 @@ a:active {text-decoration:underline;color:black;}
 	font-size: 20px;
 	display: none;	
 }
+
+#complaint{
+	display: none;
+	position: relative;
+	top: 60px;
+}

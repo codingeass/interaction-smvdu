@@ -114,6 +114,29 @@
           <input type="button" name="Cancel" value="Cancel" onclick="close_imageupload()"/>
       </form>
     </section>
+        <section id="complaint">
+      <form>
+        <table>
+          <tr><td>Category:</td><td><select id="hello" name="category" onchange="update()" required>
+            <option value=1>Administration</option>
+            <option value=2>Academics</option>
+            <option value=3>Hostel</option>
+            <option value=4>Network Centre</option>
+          </select></td></tr>
+        </table>
 
+        <table>
+          <tr><td>Sub Category:</td><td><select id="sub" name="sub_category" required>
+            <option value=1>Finance</option>
+            <option value=2>A & E Section</option>
+            <option value=3>XYZ</option>
+            <option value=4>ABC</option>
+          </select></td></tr>
+          <tr><td>Message:</td><td><textarea name="complaint_message" rows="10" cols="50" maxlength="500" required></textarea>Limit:500 Characters</td></tr>
+          <tr><td><input type="button" value="Send Complaint" onclick="complaint_send()"></td></tr>
+        </table>
+      <form>
+    </section>
+</section>
   </body>
 </html> 

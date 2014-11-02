@@ -119,3 +119,28 @@ function feedback_send(){
 	}	
 
 }
+
+function complaint_send(){
+	var xmlhttp=false;
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	if(xmlhttp)
+	{
+		xmlhttp.open("GET",'public/php/complaint.php?category='+document.getElementsByName("category")[0].value+'&sub_category='+document.getElementsByName("sub_category")[0].value+'&message='+document.getElementsByName("complaint_message")[0].value);
+		xmlhttp.send();
+		xmlhttp.onreadystatechange=function()
+		{
+			if(xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				alert("Complaint Registered");
+			}				
+		}				
+	}	
+
+}

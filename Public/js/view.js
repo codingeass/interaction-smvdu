@@ -10,6 +10,7 @@ function d_profile(){
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";	
 	document.getElementById("feedback").style.display="none";
+	document.getElementById("complaint").style.display="none";
 }
 
 function d_search(){
@@ -24,6 +25,7 @@ function d_search(){
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";
 	document.getElementById("feedback").style.display="none";
+	document.getElementById("complaint").style.display="none";
 }
 
 function editacontent(){
@@ -38,6 +40,7 @@ function editacontent(){
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";
 	document.getElementById("feedback").style.display="none";
+	document.getElementById("complaint").style.display="none";
 }
 
 function d_post(){
@@ -52,6 +55,7 @@ function d_post(){
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";
 	document.getElementById("feedback").style.display="none";
+	document.getElementById("complaint").style.display="none";
 	listpost();
 }
 
@@ -67,6 +71,7 @@ function d_edit(){
 	document.getElementById("message_wr").style.display="none";		
 	document.getElementById("message_inbox").style.display="none";
 	document.getElementById("feedback").style.display="none";
+	document.getElementById("complaint").style.display="none";
 }
 
 function d_inbox(){
@@ -80,7 +85,8 @@ function d_inbox(){
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";	
 	document.getElementById("message_inbox").style.display="block";
-	document.getElementById("feedback").style.display="none";	
+	document.getElementById("feedback").style.display="none";
+	document.getElementById("complaint").style.display="none";	
 	message_inbox();
 }
 
@@ -95,7 +101,7 @@ function d_complaint(){
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";	
 	document.getElementById("message_inbox").style.display="none";	
-	//document.getElementById("complaint").style.display="block";
+	document.getElementById("complaint").style.display="block";
 	document.getElementById("feedback").style.display="none";				
 }
 
@@ -110,7 +116,7 @@ function d_feedback(){
 	document.getElementById("select_post").style.display="none";	
 	document.getElementById("message_wr").style.display="none";	
 	document.getElementById("message_inbox").style.display="none";	
-	//document.getElementById("complaint").style.display="none";	
+	document.getElementById("complaint").style.display="none";	
 	document.getElementById("feedback").style.display="block";				
 }
 
