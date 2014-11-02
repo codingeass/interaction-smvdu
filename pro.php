@@ -8,6 +8,7 @@
     <script type="text/javascript" src="public/js/post.js"></script>    
     <script type="text/javascript" src="public/js/search.js"></script>
     <script type="text/javascript" src="public/js/view.js"></script>
+    <script type="text/javascript" src="public/js/change_subcategory.js"></script>
     <script type="text/javascript" src="public/js/message.js"></script>
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
@@ -106,18 +107,10 @@
         </table>
     </section>
 
-    <section id="profile_section">
-      <br/><br/>
-      <form  method="post" action="public/php/image_upload.php" enctype="multipart/form-data" >
-          <input type="file" id="file" name="file" /><br /><br />
-          <input type="submit" name="submit" value="Upload" />
-          <input type="button" name="Cancel" value="Cancel" onclick="close_imageupload()"/>
-      </form>
-    </section>
-        <section id="complaint">
+    <section id="complaint">
       <form>
         <table>
-          <tr><td>Category:</td><td><select id="hello" name="category" onchange="update()" required>
+          <tr><td>Category:</td><td><select name="category" onchange="update()" required>
             <option value=1>Administration</option>
             <option value=2>Academics</option>
             <option value=3>Hostel</option>
@@ -135,8 +128,18 @@
           <tr><td>Message:</td><td><textarea name="complaint_message" rows="10" cols="50" maxlength="500" required></textarea>Limit:500 Characters</td></tr>
           <tr><td><input type="button" value="Send Complaint" onclick="complaint_send()"></td></tr>
         </table>
-      <form>
+      </form>
     </section>
+
+    <section id="profile_section">
+      <br/><br/>
+      <form  method="post" action="public/php/image_upload.php" enctype="multipart/form-data" >
+          <input type="file" id="file" name="file" /><br /><br />
+          <input type="submit" name="submit" value="Upload" />
+          <input type="button" name="Cancel" value="Cancel" onclick="close_imageupload()"/>
+      </form>
+    </section>
+    
 </section>
   </body>
 </html> 

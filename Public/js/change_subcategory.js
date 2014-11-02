@@ -1,5 +1,5 @@
 function update(){
-	category=document.forms[0].category.value;
+	var category=document.forms[0].category.value;
 	switch(category){
 		case '1':
 				document.getElementById('sub').innerHTML="<option value=1>Finance</option><option value=2>A & E Section</option><option value=3>XYZ</option><option value=4>ABC</option>";	
