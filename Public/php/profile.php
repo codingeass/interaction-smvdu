@@ -9,12 +9,17 @@
               while($res=mysql_fetch_assoc($que))
               {
                 $id=$res['id'];
+                $image=$res['image'];
                 break;
               }
 
           }
           else
             echo "<script>window.location.assign('index.php');</script>";
+          if($image!='NO'){
+            echo "<script> document.getElementById('profile_image').innerHTML=' <img src=\"public/img/profile/".$res['image']."\"><div id=\"image_button\" onclick=\"upload_image()\">&nbsp;Change profile</div>'</script>";
+          }
+
           $query=mysql_query("SELECT * FROM ".strip_tags($_SESSION["type"]). " WHERE id = '".$id."' ;")
           or die("error");
           if($query){

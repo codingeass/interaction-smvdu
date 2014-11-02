@@ -9,12 +9,17 @@
               {
                 $id=$res['id'];
                 $type=$res['type'];
+                $image=$res['image'];
                 break;
               }
 
           }
           else
             echo "<script>window.location.assign('index.php');</script>";
+          if($image!='NO'){
+            echo "<div id='profile_image'><img src=\"public/img/profile/".$res['image']."\"></div>";
+          }
+
           $query=mysql_query("SELECT * FROM ".$type. " WHERE id = '".$id."' ;")
           or die("error");
           if($query){
