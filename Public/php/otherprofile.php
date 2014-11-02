@@ -19,6 +19,8 @@
           if($image!='NO'){
             echo "<div id='profile_image'><img src=\"public/img/profile/".$res['image']."\"></div>";
           }
+          else
+              echo "<div id='profile_image'><img src=\"public/img/profile/default.png\"></div>";          
 
           $query=mysql_query("SELECT * FROM ".$type. " WHERE id = '".$id."' ;")
           or die("error");
