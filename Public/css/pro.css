@@ -171,8 +171,9 @@ a:active {text-decoration:underline;color:black;}
 
 #message{
 	position: absolute;
-	top: 40px;
-	left: 1200px;	
+	top: 250px;
+	left: 1150px;
+	z-index: 4;	
 }
 
 #message button{
@@ -256,4 +257,19 @@ a:active {text-decoration:underline;color:black;}
 
 #profile_image:hover #image_button{
 	display: block;
+}
+
+#profile_section{
+	position: absolute;
+	height: 230px;
+	top: 23px;
+	left: 530px;
+	background-color: white;
+	width: 340px;
+	z-index: 3;
+	border: 1px solid black;
+	border-radius: 13px;
+	padding: 23px;
+	font-size: 20px;
+	display: none;	
 }

@@ -32,13 +32,12 @@
           </ul>
       </section> 
 
-<section id="p_second">
+<section id="p_second"> 
       <section id="profile">
           <div id="profile_image">
            <img src="public/img/profile/default.png">
            <div id="image_button" onclick="upload_image()">&nbsp;Change profile</div> 
           </div>
-      <section id="profile">
           <?php
             require("public/php/profile.php");
             //date("F j, Y, g:i a");  
@@ -105,6 +104,15 @@
           <tr><td>Message :</td><td><textarea name="feedback_message" rows="10" cols="50" maxlength="500" required></textarea>Limit:500 characters</td></tr>
           <tr><td><input type="button" value="Send Feedback" onclick="feedback_send()"></td></tr>
         </table>
+    </section>
+
+    <section id="profile_section">
+      <br/><br/>
+      <form  method="post" action="public/php/image_upload.php" enctype="multipart/form-data" >
+          <input type="file" id="file" name="file" /><br /><br />
+          <input type="submit" name="submit" value="Upload" />
+          <input type="button" name="Cancel" value="Cancel" onclick="close_imageupload()"/>
+      </form>
     </section>
 
   </body>
