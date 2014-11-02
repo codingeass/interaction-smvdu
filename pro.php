@@ -34,6 +34,11 @@
 
 <section id="p_second">
       <section id="profile">
+          <div id="profile_image">
+           <img src="public/img/profile/default.png">
+           <div id="image_button" onclick="upload_image()">&nbsp;Change profile</div> 
+          </div>
+      <section id="profile">
           <?php
             require("public/php/profile.php");
             //date("F j, Y, g:i a");  

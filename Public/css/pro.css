@@ -229,3 +229,31 @@ a:active {text-decoration:underline;color:black;}
 #feedback input["button"]:before{
 	text-align: center;
 }
+
+#profile_image{
+	position: absolute;
+	top: 23px;
+	left: 1100px;
+	z-index: 2;
+	height: 200px;
+}
+
+#profile_image img{
+	height: 200px;
+}
+
+#profile_image #image_button{
+	font-size: 20px;
+	background-color: #ffffff;
+	width: 130px;	
+	border-radius: 23px;
+	position: relative;
+	top: -180px;
+	left: 30px;
+	display: none;
+	cursor: pointer;
+}
+
+#profile_image:hover #image_button{
+	display: block;
+}
