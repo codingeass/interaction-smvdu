@@ -177,3 +177,11 @@ function othersearch(em){
 				}				
 			}
 }
+
+function upload_image(){
+	document.getElementById("profile_section").style.display = "block";
+}
+
+function close_imageupload(){
+	document.getElementById("profile_section").style.display = "none";	
+}
