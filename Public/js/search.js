@@ -13,7 +13,7 @@ function search_pro(){
 			if(xmlhttp)
 			{
 				
-				xmlhttp.open("GET",'public/php/search.php?v='+name);
+				xmlhttp.open("GET",'public/php/search.php?v='+encodeURIComponent(name));
 				xmlhttp.send();
 				xmlhttp.onreadystatechange=function()
 				{
@@ -138,7 +138,7 @@ function upcontent(){
 			}
 			if(xmlhttp)
 			{				
-				xmlhttp.open("GET",'public/php/upcontent.php?title='+title+'&content='+content+'&i='+k);
+				xmlhttp.open("GET",'public/php/upcontent.php?title='+encodeURIComponent(title)+'&content='+encodeURIComponent(content)+'&i='+k);
 				xmlhttp.send();
 				xmlhttp.onreadystatechange=function()
 				{

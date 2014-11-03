@@ -4,8 +4,8 @@ require_once("connect.php");
 	
 	if(isset($_REQUEST["subject"])&&isset($_REQUEST["message"]))
 	{
-		$subject=strip_tags($_REQUEST['subject']);
-	    $message=strip_tags($_REQUEST['message']);
+		$subject=urldecode(strip_tags($_REQUEST['subject']));
+	    $message=urldecode(strip_tags($_REQUEST['message']));
 	try
 	{
     $message="Subject : ".$subject."<br/>Message : ".$message."<br/> Sender Mail : ".$_SESSION["email"];

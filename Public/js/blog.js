@@ -24,7 +24,7 @@ var url = (function(a) {
 		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 		  }
 				
-		xmlhttp.open("GET","public\\xml\\blog\\"+url['em']+".xml",false);
+		xmlhttp.open("GET","public\\xml\\blog\\"+url['em']+".xml?x="+Math.random(),false);
 		xmlhttp.send();
 
 		xmlDoc=xmlhttp.responseXML; 
@@ -74,7 +74,7 @@ var url = (function(a) {
 		  			xmlhttp1=new ActiveXObject("Microsoft.XMLHTTP");
 		 		 }
 
-				xmlhttp1.open("GET","public/php/commentadd.php?comment="+mk+"&em="+url["em"]+"&no="+pl,false);
+				xmlhttp1.open("GET","public/php/commentadd.php?comment="+encodeURIComponent(mk)+"&em="+encodeURIComponent(url["em"])+"&no="+pl,false);
 
 				//xmlhttp1.send();
 				xmlhttp1.onreadystatechange =function()

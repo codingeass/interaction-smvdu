@@ -3,7 +3,7 @@
           require_once("connect.php");
 
           if(isset($_REQUEST['v'])){
-          $que=mysql_query("SELECT * FROM user WHERE `email`='".strip_tags($_REQUEST["v"])."'");
+          $que=mysql_query("SELECT * FROM user WHERE `email`='".urldecode(strip_tags($_REQUEST["v"]))."'");
           if($que){
               while($res=mysql_fetch_assoc($que))
               {
@@ -32,7 +32,7 @@
               echo "<table>";
               echo "<tr><td>Name:</td><td>".$result['name']."</td></tr>";
               echo "<tr><td>Sex:</td><td>".$result['sex']."</td></tr>";
-              echo "<tr><td>Email:</td><td>".strip_tags($_REQUEST["v"])."</td></tr>";
+              echo "<tr><td>Email:</td><td>".urldecode(strip_tags($_REQUEST["v"]))."</td></tr>";
               echo "<tr><td>Date of Birth:</td><td>".$result['date_of_birth']."</td></tr>";
               echo "<tr><td>Date of joining:</td><td>".$result['date_of_joining']."</td></tr>";
               echo "<tr><td>Entry No.:</td><td>".$result['entry_no']."</td></tr>";
@@ -54,7 +54,7 @@
               echo "<table>";
               echo "<tr><td>Name:</td><td>".$result['name']."</td></tr>";
               echo "<tr><td>Sex:</td><td>".$result['sex']."</td></tr>";
-              echo "<tr><td>Email:</td><td>".strip_tags($_REQUEST["v"])."</td></tr>";
+              echo "<tr><td>Email:</td><td>".urldecode(strip_tags($_REQUEST["v"]))."</td></tr>";
               echo "<tr><td>Date of Birth:</td><td>".$result['date_of_birth']."</td></tr>";
               echo "<tr><td>Date of joining:</td><td>".$result['date_of_joining']."</td></tr>";
               echo "<tr><td>Designation :</td><td>".$result['designation']."</td></tr>";

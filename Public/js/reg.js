@@ -38,9 +38,9 @@ function stu_submit()
 	//alert(document.getElementsByName("join_date")[0].value);2014-10-01
 	if(document.getElementsByName("entry_no")[0].value!=""&&document.getElementsByName("branch")[0].value!=""&&document.getElementsByName("semester")[0].value!=""&&document.getElementsByName("birth_date")[0].value!=""&&document.getElementsByName("join_date")[0].value!="")
 	{
-		 var name = document.getElementsByName("full_name")[0].value;
-		 var email = document.getElementsByName("email")[1].value;
-		 var pass =document.getElementsByName("password")[0].value;
+		 var name = encodeURIComponent(document.getElementsByName("full_name")[0].value);
+		 var email = encodeURIComponent(document.getElementsByName("email")[1].value);
+		 var pass =encodeURIComponent(document.getElementsByName("password")[0].value);
 		 if(document.getElementsByName("user_type")[0].checked)
 		{	
 			var type="student";
@@ -56,25 +56,25 @@ function stu_submit()
 	    if (document.getElementsByName("sex")[0].checked)
 	    var sex="male";
 
-        var ent = document.getElementsByName("entry_no")[0].value;
-        var bran=document.getElementsByName("branch")[0].value;
-        var sem=document.getElementsByName("semester")[0].value;
-        var bir=document.getElementsByName("birth_date")[0].value;
-        var join=document.getElementsByName("join_date")[0].value;
+        var ent = encodeURIComponent(document.getElementsByName("entry_no")[0].value);
+        var bran=encodeURIComponent(document.getElementsByName("branch")[0].value);
+        var sem=encodeURIComponent(document.getElementsByName("semester")[0].value);
+        var bir=encodeURIComponent(document.getElementsByName("birth_date")[0].value);
+        var join=encodeURIComponent(document.getElementsByName("join_date")[0].value);
         if(document.getElementsByName("address")[0].value!='')
-        	var add=document.getElementsByName("address")[0].value;
+        	var add=encodeURIComponent(document.getElementsByName("address")[0].value);
         else
         	var add= "-1";
         if(document.getElementsByName("contact_no")[0].value!='')
-        	var cont=document.getElementsByName("contact_no")[0].value;
+        	var cont=encodeURIComponent(document.getElementsByName("contact_no")[0].value);
         else
         	var cont= "-1";
         if(document.getElementsByName("projects")[0].value!='')
-        	var pro=document.getElementsByName("projects")[0].value;
+        	var pro=encodeURIComponent(document.getElementsByName("projects")[0].value);
         else
         	var pro= "-1";
         if(document.getElementsByName("area_interest")[0].value!='')
-        	var are=document.getElementsByName("area_interest")[0].value;
+        	var are=encodeURIComponent(document.getElementsByName("area_interest")[0].value);
         else
         	var are= "-1";
         
@@ -113,9 +113,9 @@ function fac_submit()
 	//alert(document.getElementsByName("join_date")[0].value);2014-10-01
 	if(document.getElementsByName("department")[0].value!=""&&document.getElementsByName("designation")[0].value!=""&&document.getElementsByName("qualification")[0].value!=""&&document.getElementsByName("birth_date")[1].value!=""&&document.getElementsByName("join_date")[1].value!="")
 	{
-			 var name = document.getElementsByName("full_name")[0].value;
-		 var email = document.getElementsByName("email")[1].value;
-		 var pass =document.getElementsByName("password")[0].value;
+			 var name = encodeURIComponent(document.getElementsByName("full_name")[0].value);
+		 var email = encodeURIComponent(document.getElementsByName("email")[1].value);
+		 var pass =encodeURIComponent(document.getElementsByName("password")[0].value);
 		 if(document.getElementsByName("user_type")[0].checked)
 		{	
 			var type="student";
@@ -131,29 +131,29 @@ function fac_submit()
 	    if (document.getElementsByName("sex")[0].checked)
 	    var sex="male";
 
-        var dep = document.getElementsByName("department")[0].value;
-        var desi=document.getElementsByName("designation")[0].value;
-        var qua=document.getElementsByName("qualification")[0].value;
-        var bir=document.getElementsByName("birth_date")[1].value;
-        var join=document.getElementsByName("join_date")[1].value;
+        var dep = encodeURIComponent(document.getElementsByName("department")[0].value);
+        var desi=encodeURIComponent(document.getElementsByName("designation")[0].value);
+        var qua=encodeURIComponent(document.getElementsByName("qualification")[0].value);
+        var bir=encodeURIComponent(document.getElementsByName("birth_date")[1].value);
+        var join=encodeURIComponent(document.getElementsByName("join_date")[1].value);
         if(document.getElementsByName("address")[1].value!='')
-        	var add=document.getElementsByName("address")[1].value;
+        	var add=encodeURIComponent(document.getElementsByName("address")[1].value);
         else
         	var add= "-1";
         if(document.getElementsByName("contact_no")[1].value!='')
-        	var cont=document.getElementsByName("contact_no")[1].value;
+        	var cont=encodeURIComponent(document.getElementsByName("contact_no")[1].value);
         else
         	var cont= "-1";
         if(document.getElementsByName("projects")[1].value!='')
-        	var pro=document.getElementsByName("projects")[1].value;
+        	var pro=encodeURIComponent(document.getElementsByName("projects")[1].value);
         else
         	var pro= "-1";
         if(document.getElementsByName("area_interest")[1].value!='')
-        	var are=document.getElementsByName("area_interest")[1].value;
+        	var are=encodeURIComponent(document.getElementsByName("area_interest")[1].value);
         else
         	var are= "-1";
         if(document.getElementsByName("area_specialization")[0].value!='')
-        	var spec=document.getElementsByName("area_specialization")[0].value;
+        	var spec=encodeURIComponent(document.getElementsByName("area_specialization")[0].value);
         else
         	var spec= "-1";
         

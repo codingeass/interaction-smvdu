@@ -7,7 +7,7 @@ function listpost(){
 		  {// code for IE6, IE5
 		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 		  }
-		xmlhttp.open("GET","public\\xml\\blog\\blog.xml",false);
+		xmlhttp.open("GET","public\\xml\\blog\\blog.xml?"+Math.random(),false);
 		xmlhttp.send();
 		xmlDoc=xmlhttp.responseXML; 
 		var mg=document.getElementById("blogposts");

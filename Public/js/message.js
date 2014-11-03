@@ -27,7 +27,7 @@ function message_com(){
 			if(xmlhttp)
 			{
 				
-				xmlhttp.open("GET",'public/php/send_message.php?id='+document.getElementsByName("email_h")[0].value+'&message='+document.getElementsByName("content_message")[0].value);
+				xmlhttp.open("GET",'public/php/send_message.php?id='+encodeURIComponent(document.getElementsByName("email_h")[0].value)+'&message='+encodeURIComponent(document.getElementsByName("content_message")[0].value));
 				xmlhttp.send();
 				xmlhttp.onreadystatechange=function()
 				{
@@ -107,7 +107,7 @@ function feedback_send(){
 	if(xmlhttp)
 	{
 		
-		xmlhttp.open("GET",'public/php/feedback.php?subject='+document.getElementsByName("subject")[0].value+'&message='+document.getElementsByName("feedback_message")[0].value);
+		xmlhttp.open("GET",'public/php/feedback.php?subject='+encodeURIComponent(document.getElementsByName("subject")[0].value)+'&message='+encodeURIComponent(document.getElementsByName("feedback_message")[0].value));
 		xmlhttp.send();
 		xmlhttp.onreadystatechange=function()
 		{
@@ -132,7 +132,7 @@ function complaint_send(){
 	}
 	if(xmlhttp)
 	{
-		xmlhttp.open("GET",'public/php/complaint.php?category='+document.getElementsByName("category")[0].value+'&sub_category='+document.getElementsByName("sub_category")[0].value+'&message='+document.getElementsByName("complaint_message")[0].value);
+		xmlhttp.open("GET",'public/php/complaint.php?category='+encodeURIComponent(document.getElementsByName("category")[0].value)+'&sub_category='+encodeURIComponent(document.getElementsByName("sub_category")[0].value)+'&message='+encodeURIComponent(document.getElementsByName("complaint_message")[0].value));
 		xmlhttp.send();
 		xmlhttp.onreadystatechange=function()
 		{

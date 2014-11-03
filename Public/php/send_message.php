@@ -8,8 +8,8 @@ require_once("sessionv.php");
 if(isset($_REQUEST["message"])&&isset($_REQUEST["id"])){
 		require_once("connect.php");
 		$from=$_SESSION['id'];
-		$to=strip_tags($_REQUEST["id"]);
-		$content=strip_tags(mysql_real_escape_string($_REQUEST['message']));
+		$to=strip_tags(urldecode($_REQUEST["id"]));
+		$content=strip_tags(mysql_real_escape_string(urldecode($_REQUEST['message'])));
 		$query="INSERT INTO `message`(`from`, `to`, `content`) VALUES (".$from.",".$to.",'".$content."');";
 		if(mysql_query($query)or die(mysql_error())){
 			echo "Correct";

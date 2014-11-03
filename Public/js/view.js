@@ -139,7 +139,7 @@ function addcontent(){
 			if(xmlhttp)
 			{
 				
-				xmlhttp.open("GET",'public/php/addcontent.php?title='+title+'&content='+content);
+				xmlhttp.open("GET",'public/php/addcontent.php?title='+encodeURIComponent(title)+'&content='+encodeURIComponent(content));
 				xmlhttp.send();
 				xmlhttp.onreadystatechange=function()
 				{
@@ -170,7 +170,7 @@ function othersearch(em){
 			if(xmlhttp)
 			{
 				
-				xmlhttp.open("GET",'public/php/otherprofile.php?v='+em);
+				xmlhttp.open("GET",'public/php/otherprofile.php?v='+encodeURIComponent(em));
 				xmlhttp.send();
 				xmlhttp.onreadystatechange=function()
 				{

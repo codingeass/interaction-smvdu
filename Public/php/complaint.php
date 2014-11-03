@@ -4,9 +4,9 @@ require_once("connect.php");
 	
 	if(isset($_REQUEST["category"])&&isset($_REQUEST["sub_category"])&&isset($_REQUEST["message"]))
 	{
-		$category=strip_tags($_REQUEST['category']);
-		$sub_category=strip_tags($_REQUEST['sub_category']);
-	    $message=strip_tags($_REQUEST['message']);
+		$category=urldecode(strip_tags($_REQUEST['category']));
+		$sub_category=urldecode(strip_tags($_REQUEST['sub_category']));
+	    $message=urldecode(strip_tags($_REQUEST['message']));
 	try
 	{
 
