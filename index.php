@@ -77,7 +77,7 @@
     <tr><td>Contact Number :</td><td><input type="text" placeholder="i.e.9797521898" name="contact_no"></td></tr> 
     <tr><td>Projects :</td><td><input type="text" placeholder="like.library system,animation" name="projects"></td></tr> 
     <tr><td>Area of Interest:</td><td><input type="text" placeholder="like java,robotics" name="area_interest"></td></tr> 
-    	<tr><td><input type="button" value="Back" onclick="stu_back()"></td><td><input type="button" value="Submit" onclick="stu_submit()"></td></tr>
+    	<tr><td><input type="button" value="Cancel" onclick="window.location.assign('');"></td><td><input type="button" value="Submit" onclick="stu_submit()"></td></tr>
     <tr><td colspan="2" id="stu_warning"></td></tr> 
      </table>
      </form>
@@ -110,7 +110,7 @@
     <div><tr><td>Projects :</td><td><input type="text" placeholder="like.library system,animation" name="projects"></td></tr></div> 
     <div><tr><td>Area of Interest:</td><td><input type="text" placeholder="like java,robotics" name="area_interest"></td></tr></div> 
     <div><tr><td>Area of Specialization *:</td><td><input type="text" placeholder="eg.django,python" name="area_specialization"></td></tr></div> 
-    <div><tr><td><input type="button" value="Back" onclick="fac_back()"></td><td><input type="button" value="Submit" onclick="fac_submit()"></td></tr></div> 
+    <div><tr><td><input type="button" value="Cancel" onclick="window.location.assign('');"></td><td><input type="button" value="Submit" onclick="fac_submit()"></td></tr></div> 
     <tr><td colspan="2" id="fac_warning"></td></tr>
     </table>
     </form>
