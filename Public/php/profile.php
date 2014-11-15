@@ -3,7 +3,7 @@
           require_once("public/php/connect.php");
 
           if(!isset($_REQUEST['q'])){
-            session_start();
+            //session_start();
           $que=mysql_query("SELECT * FROM user WHERE `email`='".strip_tags($_SESSION["email"])."'");
           if($que){
               while($res=mysql_fetch_assoc($que))

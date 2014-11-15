@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="public/css/front.css"/>
+    <title>SMVDU INTERACTION</title>
 	</head>
 	<body> 
 	<section id="first_all">
@@ -12,7 +13,7 @@
 			<form action="public\php\verify.php" method="post"> 
 			<div>Login : Email : &nbsp;<input type="email" placeholder="Email id" name="email"></div>
 			<div>Password : &nbsp;&nbsp;<input type="password" placeholder="password" name="pass"></div>
-			<div><input type="submit"></div>
+			<div><input type="submit" value="submit"></div>
 			</form>
 		</section>
 	<?php

@@ -16,7 +16,8 @@ body{
 }
 
 #p_first{
-	background-color: #91a0a2;
+	background-color: #bea74b;
+/*#91a0a2*/
 	float: left;
 	width: 250px;
 	font-size: 23px;
@@ -27,7 +28,8 @@ body{
 }
 
 #p_second{
-	background-color: #cdd4d5;	
+	background-color:#cfcab6; 
+	/* #cdd4d5 */	
 	width: 1095px;
 	height: 662px;
 	overflow: auto;

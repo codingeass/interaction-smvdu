@@ -13,6 +13,7 @@
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
+    <title>SMVDU INTERACTION</title>
 	</head>
 	<body>
       
@@ -40,6 +41,7 @@
            <div id="image_button" onclick="upload_image()">&nbsp;Change profile</div> 
           </div>
           <?php
+          require("public\php\sessionv.php");
             require("public/php/profile.php");
             //date("F j, Y, g:i a");  
           ?>
