@@ -199,7 +199,7 @@ a:active {text-decoration:underline;color:black;}
 #message{
 	position: absolute;
 	top: 250px;
-	left: 1150px;
+	left: 1140px;
 	z-index: 4;	
 }
 
@@ -207,7 +207,7 @@ a:active {text-decoration:underline;color:black;}
 	height: 30px;	
   font-family:  Georgia, "Times New Roman",Serif;
   font-size: 18px;
-  background-color: #79b2e3;
+  background-color: #27AE60;
   border-radius: 8px;
 }
 
@@ -339,4 +339,15 @@ a:active {text-decoration:underline;color:black;}
 	display: none;
 	position: relative;
 	top: 60px;
+}
+
+#complaint input[type=button],#feedback input[type=button],#search input[type=button]{
+	width: 150px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 5px 2px;
 }
