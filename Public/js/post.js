@@ -30,7 +30,7 @@ function listpost(){
 				  {// code for IE6, IE5
 				  xmlhttp1=new ActiveXObject("Microsoft.XMLHTTP");
 				  }
-				 xmlhttp1.open("GET","public\\xml\\blog\\"+x[i].getElementsByTagName("email")[0].childNodes[0].nodeValue+".xml?"+Math.random(),false);
+				 xmlhttp1.open("GET","public\\xml\\blog\\"+x[i].getElementsByTagName("email")[0].childNodes[0].nodeValue+".xml?",false);
 				 xmlhttp1.send();
 				 xmlDoc1=xmlhttp1.responseXML; 
 				 x1=xmlDoc1.getElementsByTagName("BlogSection");
@@ -46,7 +46,7 @@ function listpost(){
 			}
 			mk=mk+"<div style='right:23px;font-size:18px;'>"+cont+"<b>&nbsp;&nbsp;&nbsp;"+mlink+"Continue...</a></b></div></section>";
 		}
-		mg.innerHTML=mk;
+		mg.innerHTML="<center style='font-size:26px;margin-top:10px;'><b>BlogPosts</b></center>"+mk;
 		// for (i=0;i<x.length;i++)
 		// {
 		// 	mk=mk+"<section style='border:1px solid black;border-radius:3px;padding:15px;margin:50px;'><h2><a href='blog.html?uv="+i+"'>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</a></h2>";

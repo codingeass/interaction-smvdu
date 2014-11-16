@@ -27,6 +27,11 @@ body{
 	color: #d9d5df;
 	height: 582px; 
 }
+
+#p_first div:hover{
+	color: black;
+}
+
 #p_first a {
 	color: #d9d5df; 
     text-decoration: none;
@@ -38,6 +43,7 @@ body{
 
 #p_first a:hover {
     text-decoration: none;
+    color: black;
 }
 
 #p_first a:active {
