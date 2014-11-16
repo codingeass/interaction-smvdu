@@ -45,7 +45,7 @@
      <tr><td colspan="2" id="f_warning"></td></tr>
     </table>
   </form>
-  <div id="note_email">Note: Use college provided Email-id to register</div>
+  <div id="note_email">Note: Use college Email-id to register</div>
   </div>
 	</section>
 	</section>
@@ -116,7 +116,14 @@
     </form>
   </div>
 </section>
-
+<section id="second_all">
+<iframe width="1349" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Shri+Mata+Vaishno+Devi+University,+Reasi&amp;aq=0&amp;oq=smvdu&amp;sll=20.983588,82.752628&amp;sspn=47.832907,82.265625&amp;ie=UTF8&amp;hq=Shri+Mata+Vaishno+Devi+University,+Reasi&amp;t=m&amp;ll=32.941232,74.953666&amp;spn=0.012606,0.026822&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+<footer>
+    <center id="github">
+      <p>This Website is Developed using open source platform on Github. Play with the code at <a href="https://github.com/codingeass/interaction-smvdu" target="_blank"> <span>Github - Interaction SMVDU</span><img src="public/img/github.png"></a></p>
+   </center>
+</footer>
+</section>
 <script type="text/javascript" src="public/js/reg.js"></script>
 	</body>
 </html> 
