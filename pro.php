@@ -39,7 +39,7 @@
       <section id="profile">
           <div id="profile_image">
            <img src="public/img/profile/default.png">
-           <div id="image_button" onclick="upload_image()">&nbsp;Change profile</div> 
+           <div id="image_button" onclick="upload_image()"><img src="public/img/imagechange.png">Change profile</div> 
           </div>
           <?php
           require("public\php\sessionv.php");

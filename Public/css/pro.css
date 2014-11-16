@@ -268,6 +268,8 @@ a:active {text-decoration:underline;color:black;}
 	z-index: 2;
 	height: 210px;
 	border: 1px solid black;
+	color: black;
+	overflow: hidden;
 }
 
 #profile_image img{
@@ -275,16 +277,29 @@ a:active {text-decoration:underline;color:black;}
 	height: 200px;
 	max-width: 240px;
 }
+
 #profile_image #image_button{
 	font-size: 20px;
-	background-color: #ffffff;
-	width: 130px;	
-	border-radius: 23px;
+	background-color: #787d7f;
+	border-radius: 0px;
 	position: relative;
-	top: -180px;
-	left: 60px;
+	top: -60px;
+	left: 5px;
 	display: none;
 	cursor: pointer;
+	opacity: 0.8;
+	width: 240px;
+    filter: alpha(opacity=80);
+    height: 43px;
+    margin-top:15px;
+    padding-top: 5px; 
+}
+
+#profile_image #image_button img{
+	height: 30px;
+	position: relative;
+	top: -8px;
+	float: left;
 }
 
 #profile_image:hover #image_button{
