@@ -25,11 +25,13 @@ function first_fun()
 	{
 		document.getElementById("next_entry_stu").style.display = "block";
 		document.getElementById("first_all").style.display = "none";
+		document.getElementById("second_all").style.display="none";
 	}
 	if(document.getElementsByName("user_type")[1].checked)
 	{
 		document.getElementById("next_entry_fac").style.display = "block";
 		document.getElementById("first_all").style.display = "none";
+		document.getElementById("second_all").style.display="none";
 	}
 }
 
