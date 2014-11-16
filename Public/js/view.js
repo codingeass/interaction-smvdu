@@ -186,8 +186,13 @@ function othersearch(em){
 
 function upload_image(){
 	document.getElementById("profile_section").style.display = "block";
+	document.getElementById("p_first").style.opacity="0.5";
+	document.getElementById("p_second").style.opacity="0.5";
+	document.getElementById("profile_section").style.opacity = "1";
 }
 
 function close_imageupload(){
-	document.getElementById("profile_section").style.display = "none";	
+	document.getElementById("profile_section").style.display = "none";
+	document.getElementById("p_first").style.opacity="1";
+	document.getElementById("p_second").style.opacity="1";	
 }

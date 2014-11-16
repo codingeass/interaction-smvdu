@@ -20,6 +20,7 @@
     <section id="p_main">
       <section id="p_first">
           <ul>
+
           <li><div>MENU</div></li>
            <hr>          
           <li><div onclick="d_profile()" style="cursor:pointer">Profile</div></li>
@@ -72,7 +73,7 @@
       </section>
 
       <section id="blogposts">
-          BlogPost
+          
       </section>
 
 
@@ -132,8 +133,9 @@
         </table>
       </form>
     </section>
-
-    <section id="profile_section">
+    
+</section>
+<section id="profile_section">
       <br/><br/>
       <form  method="post" action="public/php/image_upload.php" enctype="multipart/form-data" >
           <input type="file" id="file" name="file" /><br /><br />
@@ -141,7 +143,5 @@
           <input type="button" name="Cancel" value="Cancel" onclick="close_imageupload()"/>
       </form>
     </section>
-    
-</section>
   </body>
 </html> 

@@ -5,7 +5,8 @@ li {
 
 body{
 	margin: 1px;
-	margin-left:2px;  
+	margin-left:2px; 
+	cursor: default; 
 }
 
 #p_main{
@@ -263,14 +264,16 @@ a:active {text-decoration:underline;color:black;}
 #profile_image{
 	position: absolute;
 	top: 23px;
-	left: 1100px;
+	left: 1080px;
 	z-index: 2;
-	height: 200px;
+	height: 210px;
+	border: 1px solid black;
 }
 
 #profile_image img{
+	padding:5px;
 	height: 200px;
-	max-width: 300px;
+	max-width: 240px;
 }
 #profile_image #image_button{
 	font-size: 20px;
@@ -279,7 +282,7 @@ a:active {text-decoration:underline;color:black;}
 	border-radius: 23px;
 	position: relative;
 	top: -180px;
-	left: 30px;
+	left: 60px;
 	display: none;
 	cursor: pointer;
 }
@@ -290,17 +293,31 @@ a:active {text-decoration:underline;color:black;}
 
 #profile_section{
 	position: absolute;
-	height: 230px;
-	top: 23px;
+	height: 150px;
+	top: 130px;
 	left: 530px;
-	background-color: white;
+	background-color: #c0d5db;
 	width: 340px;
 	z-index: 3;
 	border: 1px solid black;
-	border-radius: 13px;
+	border-radius: 3px;
 	padding: 23px;
-	font-size: 20px;
-	display: none;	
+	font-size: 18px;
+	display: none;
+	z-index: 999;
+}
+
+#profile_section input[type="submit"],#profile_section input[type="button"]{
+
+	background-color: #238a8b;
+	height: 35px;
+	font-size: 15px;
+	padding: 8px;
+	border-color: #0c5f60;
+	border-radius: 5px;
+	margin-left: 30px;
+	padding-right: 25px;
+	padding-left: 25px;
 }
 
 #complaint{
