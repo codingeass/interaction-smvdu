@@ -11,7 +11,7 @@
 	<section id="first_all">
 		<section id="first_login">
 			<form action="public\php\verify.php" method="post"> 
-			<div>Login : Email : &nbsp;<input type="email" placeholder="Email id" name="email"></div>
+			<div>Login :&nbsp;&nbsp;&nbsp; Email : &nbsp;<input type="email" placeholder="Email id" name="email"></div>
 			<div>Password : &nbsp;&nbsp;<input type="password" placeholder="password" name="pass"></div>
 			<div><input type="submit" value="submit"></div>
 			</form>

@@ -32,6 +32,19 @@ margin: 0px;
 	font-size: 20px;
 }
 
+#first_login input[type=submit]{    
+width: 100px;
+background: #27AE60;
+font-weight: bold;
+color: white;
+border: 0 none;
+border-radius: 1px;
+cursor: pointer;
+padding: 5px 2px;
+position: relative;
+top: -3px;
+}
+
 #text_display {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;
 	background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.4)), color-stop(100%,rgba(255,255,255,0.4))), url("../img/pattern_grille.png") repeat 0 0;
@@ -123,6 +136,28 @@ margin-top: 25px;
 }
 
 
+#next_entry_stu{
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+  background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+  background: gradient(to linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+  background: -o-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;   
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  width: 1350px;
+  height: 660px;
+}
+#next_entry_fac{
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+  background: -moz-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+  background: gradient(to linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;
+  background: -o-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.1)), color-stop(100%,rgba(255,255,255,0))), url("../img/archi.png") repeat 0 0;   
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  width: 1350px;
+  height: 660px;
+}
 
 #next_entry_stu  #first_form{ 
   position: absolute;
