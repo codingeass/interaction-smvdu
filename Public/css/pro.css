@@ -16,7 +16,7 @@ body{
 }
 
 #p_first{
-	background-color: #bea74b;
+	background-color: #675595;
 /*#91a0a2*/
 	float: left;
 	width: 250px;
@@ -24,11 +24,28 @@ body{
 	font-family: "Times New Roman", Times, serif;
 	/*font-weight: bold;*/
 	padding-top:80px;
+	color: #d9d5df;
 	height: 582px; 
+}
+#p_first a {
+	color: #d9d5df; 
+    text-decoration: none;
+}
+
+#p_first a:visited {
+    text-decoration: none;
+}
+
+#p_first a:hover {
+    text-decoration: none;
+}
+
+#p_first a:active {
+    text-decoration: none;
 }
 
 #p_second{
-	background-color:#cfcab6; 
+	background-color:#efecf2; 
 	/* #cdd4d5 */	
 	width: 1095px;
 	height: 662px;
@@ -215,6 +232,9 @@ a:active {text-decoration:underline;color:black;}
 	font-size: 23px;
 }
 
+#message_inbox table{
+	width: 1000px;
+}
 #message_new{
 	background-color: #7ce583;	
 }
@@ -244,8 +264,8 @@ a:active {text-decoration:underline;color:black;}
 
 #profile_image img{
 	height: 200px;
+	max-width: 300px;
 }
-
 #profile_image #image_button{
 	font-size: 20px;
 	background-color: #ffffff;
