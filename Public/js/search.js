@@ -54,7 +54,7 @@ function editcontent(){
 		var mg=document.getElementById("select_post");
 
 		x=xmlDoc.getElementsByTagName("BlogSection");
-		var mk=mg.innerHTML;		
+		var mk="Select Post from given below :<br/>";		
 		for (i=0;i<x.length;i++)
 		{
 			mk=mk+"<h3><a href=javascript:display_edit('"+i+"')>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</a></h3>";

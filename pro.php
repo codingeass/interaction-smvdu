@@ -78,7 +78,6 @@
 
 
       <section id="select_post">
-      Select Post from given below :<br/>
       </section>
 
       <section id="edit_content">
